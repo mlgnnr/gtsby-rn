@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import Lax from "../images/gatsby-icon.png"
 import '../styles/index.css';
 
 function Index() {
@@ -18,8 +19,11 @@ function Index() {
       <Helmet>
         <title>edda.run</title>
       </Helmet>
+      <img 
+        src={Lax}
+        style={{width: '100%'}}></img>
       <h1>30 km fyrir 30 ár</h1>
-      <h2>í boði edda.run</h2>
+
       <p>Vinsamlegast bíðið..</p>
     </main>
   );
