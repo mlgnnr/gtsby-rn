@@ -21,7 +21,6 @@ function Index() {
       <h1>30 km fyrir 30 ár</h1>
       <h2>í boði edda.run</h2>
       <p>Vinsamlegast bíðið..</p>
-      </div>
     </main>
   );
 }
