@@ -15,20 +15,12 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>Edda.run</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
+      <h1>30 km fyrir 30 ár</h1>
+      <div>
+        <iframe src='https://connect.garmin.com/modern/course/embed/44427275' width='465' height='548' frameborder='0'></iframe>
+      </div>
       <p>
         <a
           href="https://github.com/vercel/vercel/tree/master/examples/gatsby"
