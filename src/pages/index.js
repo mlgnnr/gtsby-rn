@@ -96,8 +96,10 @@ function Index() {
       </div>
       <img 
         src={Lax}
-        style={{width: '100%'}}></img>
-      <h1>30 km fyrir 30 ár</h1>
+        style={{
+            maxWidth: '100%',
+            maxHeight: '250px',
+            margin: '0 auto'}}></img>
     </main>
   );
 }
