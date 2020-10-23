@@ -89,7 +89,7 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>edda.run</title>
+        <title>Official afmælisLAX hlaupið </title>
       </Helmet>
       <div>
           <Countdown />
