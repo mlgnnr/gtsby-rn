@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import DateCountdown from 'react-date-countdown-timer';
 import Lax from "../images/gatsby-icon.png"
 import '../styles/index.css';
 
