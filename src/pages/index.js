@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Lax from "../images/gatsby-icon.png"
 import Hlaup from "../images/laxinn.jpg"
+import Kort from "../images/kort.jpg"
 import '../styles/index.css';
 
 const Countdown = () => {
@@ -92,7 +93,7 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Official afmælisLAX hlaupið </title>
+        <title>Af</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
       <div>
@@ -111,7 +112,16 @@ function Index() {
             maxWidth: '100%',
             maxHeight: '250px',
             margin: '0 auto',
-            marginTop: '-50px'
+            marginTop: '-50px',
+            zIndex: 100
+        }}></img>
+      <img 
+        src={Kort}
+        style={{
+            maxWidth: '330px',
+            margin: '0 auto',            
+            borderRadius: '40px',
+            marginTop: '-25px'
         }}></img>
     </main>
   );
