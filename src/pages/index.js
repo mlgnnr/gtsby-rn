@@ -56,7 +56,9 @@ const Countdown = () => {
         }}>
         <div className='time-section'>
           <div className='time'>{state.days || '0'}</div>
-          <small className="time-text">dagar</small>
+          <small className="time-text">
+              {(state.days > 0) ? "dagur" : "dagar" }
+              </small>
         </div>
         <div className='time-section'>
           <div className='time'>{state.hours || '00'}</div>
