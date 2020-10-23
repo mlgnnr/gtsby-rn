@@ -94,7 +94,7 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Af</title>
+        <title>AfmælisLAX hlaupið</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
       <div>
