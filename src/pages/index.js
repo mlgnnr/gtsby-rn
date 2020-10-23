@@ -93,6 +93,7 @@ function Index() {
     <main>
       <Helmet>
         <title>Official afmælisLAX hlaupið </title>
+        <meta property="og:image" content={Lax} />
       </Helmet>
       <div>
           <Countdown />
