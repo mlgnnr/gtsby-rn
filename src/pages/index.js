@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Lax from "../images/gatsby-icon.png"
+import Hlaup from "../images/laxinn.jpg"
 import '../styles/index.css';
 
 const Countdown = () => {
@@ -97,11 +98,20 @@ function Index() {
           <Countdown />
       </div>
       <img 
+        src={Hlaup}
+        style={{
+            maxWidth: '100%',
+            maxHeight: '250px',
+            borderRadius: '40px',
+            margin: '0 auto'}}></img>      
+      <img 
         src={Lax}
         style={{
             maxWidth: '100%',
             maxHeight: '250px',
-            margin: '0 auto'}}></img>
+            margin: '0 auto',
+            marginTop: '-50px'
+        }}></img>
     </main>
   );
 }
