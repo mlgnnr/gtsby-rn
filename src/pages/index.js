@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Lax from "../images/gatsby-icon.png"
 import Hlaup from "../images/laxinn.jpg"
-import Kort from "../images/kort.jpg"
+import Kort from "../images/laxmap.jpg"
 import '../styles/index.css';
+import { Link } from 'gatsby';
 
 const Countdown = () => {
   const [countdownDate, setCountdownDate] = useState(new Date('2020-10-25T09:00:00').getTime());
@@ -123,6 +124,17 @@ function Index() {
             borderRadius: '40px',
             marginTop: '-25px'
         }}></img>
+        <div
+            style={{
+                maxWidth: '100%',
+                borderRadius: '40px',
+            }}>
+            <a
+            href="https://connect.garmin.com/modern/course/44427275">
+                Skoða leið nánar
+            </a>
+        </div>
+
     </main>
   );
 }
