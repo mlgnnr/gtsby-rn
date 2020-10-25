@@ -97,9 +97,6 @@ function Index() {
         <title>AfmælisLAX hlaupið</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
-      <div>
-          <Countdown />
-      </div>
         <div
             style={{
                 maxWidth: '100%',
