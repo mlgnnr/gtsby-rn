@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Lax from "../images/gatsby-icon.png"
 import Hlaup from "../images/laxinn.jpg"
 import Kort from "../images/laxmap.jpg"
+import Crew from "../images/hlaupacrew.jpg"
 import '../styles/index.css';
 import { Link } from 'gatsby';
 
@@ -116,10 +117,9 @@ function Index() {
             </a>
         </div>
       <img 
-        src={Hlaup}
+        src={Crew}
         style={{
-            maxWidth: '100%',
-            maxHeight: '250px',
+            maxWidth: '330px',
             borderRadius: '40px',
             margin: '0 auto'}}></img>      
       <img 
