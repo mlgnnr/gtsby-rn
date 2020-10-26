@@ -95,33 +95,9 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>AfmælisLAX hlaupið</title>
+        <title>LAX</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
-        <div
-            style={{
-                maxWidth: '100%',
-                borderRadius: '40px',
-                height: '45px'
-            }}>
-            <a 
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: 'inherit'
-                }}
-                href="https://livetrack.garmin.com/session/1270d1ce-ced4-4d0e-92ee-7cdb5ae51f2c/token/585C658E3F87583B87BE6155BB738A">
-                <span style={{marginRight: '10px'}}>LAX í beinni</span>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>         
-            </a>
-        </div>
-      <img 
-        src={Crew}
-        style={{
-            maxWidth: '330px',
-            borderRadius: '40px',
-            margin: '0 auto'}}></img>      
       <img 
         src={Lax}
         style={{
@@ -131,32 +107,6 @@ function Index() {
             marginTop: '-50px',
             zIndex: 100
         }}></img>
-      <img 
-        src={Kort}
-        style={{
-            maxWidth: '330px',
-            margin: '0 auto',            
-            borderRadius: '40px',
-            marginTop: '-25px'
-        }}></img>
-        <div
-            style={{
-                maxWidth: '100%',
-                borderRadius: '40px',
-                height: '45px'
-            }}>
-            <a 
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: 'inherit'
-                }}
-                href="https://connect.garmin.com/modern/course/44427275">
-                <span style={{marginRight: '10px'}}>Hlaupakort</span>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>         
-            </a>
-        </div>
 
     </main>
   );
