@@ -8,7 +8,7 @@ import '../styles/index.css';
 import { Link } from 'gatsby';
 
 const Countdown = () => {
-  const [countdownDate, setCountdownDate] = useState(new Date('2020-10-25T09:00:00').getTime());
+  const [countdownDate, setCountdownDate] = useState(new Date('2021-06-04T22:00:00').getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
@@ -107,6 +107,7 @@ function Index() {
             marginTop: '-50px',
             zIndex: 100
         }}></img>
+        <Countdown />
 
     </main>
   );
