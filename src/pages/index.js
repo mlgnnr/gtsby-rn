@@ -27,9 +27,11 @@ const Countdown = () => {
   days = `${days}`;
   if (numbersToAddZeroTo.includes(hours)) {
     hours = `0${hours}`;
-  } else if (numbersToAddZeroTo.includes(minutes)) {
+  } 
+  if (numbersToAddZeroTo.includes(minutes)) {
     minutes = `0${minutes}`;
-  } else if (numbersToAddZeroTo.includes(seconds)) {
+  } 
+  if (numbersToAddZeroTo.includes(seconds)) {
     seconds = `0${seconds}`;
   }
   const [state, setState] = useState({
@@ -63,12 +65,13 @@ const Countdown = () => {
       days = `${days}`;
       if (numbersToAddZeroTo.includes(hours)) {
         hours = `0${hours}`;
-      } else if (numbersToAddZeroTo.includes(minutes)) {
+      } 
+      if (numbersToAddZeroTo.includes(minutes)) {
         minutes = `0${minutes}`;
-      } else if (numbersToAddZeroTo.includes(seconds)) {
+      } 
+      if (numbersToAddZeroTo.includes(seconds)) {
         seconds = `0${seconds}`;
       }
-
       setState({ days: days, hours: hours, minutes, seconds });
     }
   };
