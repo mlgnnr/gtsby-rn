@@ -47,29 +47,28 @@ function Vedur() {
 // https://vedur.is/photos/isl_skyjahula2/210603_0600_34.png
 
   function numToDayName(number){
-    console.log("Num2Day: ", number)
     switch (number) {
       case 0:
-        return "Sun"
+        return "Sunnudagur"
       case 1:
-        return "Mon"
+        return "Mánudagur"
       case 2:
-        return "Tue"
+        return "Þriðjudagur"
       case 3: 
-        return "Wed"
+        return "Miðvikudagur"
       case 4:
-        return "Thu"
+        return "Fimmtudagur"
       case 5:
-        return "Fri"
+        return "Föstudagur"
       case 6:
-        return "Sat"
+        return "Laugardagur"
       default:
-        return "Error"
+        return "Sunnudagur"
     }
   }
 
   useEffect(() => {
-    const date = new Date('2021-06-03T12:00:00')
+    const date = new Date('2021-06-03T18:00:00')
     date.setHours(date.getHours() + forecastTime)
     var s = date.getSeconds();
     var m = date.getMinutes();
@@ -87,7 +86,7 @@ function Vedur() {
     } else {
         hours = forecastTime
     }
-    setPostFix("1200_0"+hours)
+    setPostFix("1800_0"+hours)
   }, [forecastTime]);
 
   return (
@@ -113,7 +112,8 @@ function Vedur() {
              flexDirection: 'column',
              justifyContent: 'center'
          }}>
-             <span className="time">{clock.day}<br/>{clock.h}:{clock.m} +{forecastTime}</span>
+             <span className="time">{clock.day}<br/>{clock.h}:{clock.m}</span><span style={{ opacity: '0.5'}}>+{forecastTime}</span>
+             
          </div>
         </div>
         <div
@@ -173,9 +173,6 @@ function Vedur() {
                     setForecastTime(parseInt(hours));
                   }}
       />
-      <div className="buble"> 
-      {forecastTime}
-      </div>
     </div>
       </div>
     </main>
