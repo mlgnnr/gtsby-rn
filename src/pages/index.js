@@ -24,6 +24,14 @@ const Countdown = () => {
 
   const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+  var d = new Date();
+  var offset = d.getTimezoneOffset();
+  console.log("OFFSET:", offset)
+  if (offset !== 0){
+    hours = hours + (Math.sqrt(offset*offset)/60)
+  } else {
+    console.log("UTC 0")
+  }
   days = `${days}`;
   if (numbersToAddZeroTo.includes(hours)) {
     hours = `0${hours}`;
@@ -61,6 +69,13 @@ const Countdown = () => {
       let seconds = Math.floor((distanceToDate % (1000 * 60)) / 1000);
 
       const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      var d = new Date();
+      var offset = d.getTimezoneOffset();
+      if (offset !== 0){
+        hours = hours + (Math.sqrt(offset*offset)/60)
+      } else {
+        console.log("UTC 0")
+      }
 
       days = `${days}`;
       if (numbersToAddZeroTo.includes(hours)) {
