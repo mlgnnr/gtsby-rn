@@ -49,6 +49,9 @@ body {
   height: 100vh;
   text-align: center;
   color: #333;
+  background: linear-gradient(
+    160deg
+    ,#ebb5a7,#6670cc 100%)
 }
 
 .header {

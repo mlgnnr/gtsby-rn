@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Lax from "../images/gatsby-icon.png"
+import Background from "../images/hlaupalax.png"
 import Hlaup from "../images/laxinn.jpg"
 import Kort from "../images/laxmap.jpg"
 import Crew from "../images/hlaupacrew.jpg"
 import '../styles/index.css';
 import { Link } from 'gatsby';
+import Laxlink from "../comp/link";
 
 const Countdown = () => {
   const [countdownDate, setCountdownDate] = useState(new Date('2021-06-04T22:00:00').getTime());
@@ -138,16 +140,19 @@ function Index() {
         <title>LAX</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
-      <img 
-        src={Lax}
+        <Countdown />
+        <img 
+        src={Background}
         style={{
             maxWidth: '100%',
             maxHeight: '250px',
             margin: '0 auto',
             marginTop: '-50px',
             zIndex: 100
-        }}></img>
-        <Countdown />
+        }}></img>             
+        <Laxlink 
+          title={"Live Results"}
+          url={"https://timataka.net/hengillultra2021/urslit/?race=1&cat=f"}/>
 
     </main>
   );
