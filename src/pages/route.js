@@ -27,7 +27,7 @@ function Route() {
         <img 
             src={RoutePNG}
             style={{
-                maxWidth: '100%',
+                maxWidth: '90%',
                 margin: '0 auto',
                 zIndex: 100
             }}></img>
@@ -45,7 +45,7 @@ function Route() {
         <img 
             src={Elevation}
             style={{
-                maxWidth: '100%',
+                maxWidth: '90%',
                 margin: '0 auto',
                 zIndex: 100
             }}></img>
