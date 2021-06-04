@@ -37,7 +37,7 @@ function Slider(){
 
 function Vedur() {
   const [forecastTime, setForecastTime] = useState(2);
-  const [postFix, setPostFix] = useState("0000_001");
+   const [postFix, setPostFix] = useState("0000_001");
   const [clock, setClock] = useState({})
   const baseURL = "v"
 //   rain/temp/wind
@@ -68,7 +68,7 @@ function Vedur() {
   }
 
   useEffect(() => {
-    const date = new Date('2021-06-04T00:00:00')
+    const date = new Date('2021-06-04T06:00:00')
     date.setHours(date.getHours() + forecastTime)
     var s = date.getSeconds();
     var m = date.getMinutes();
@@ -86,7 +86,7 @@ function Vedur() {
     } else {
         hours = forecastTime
     }
-    setPostFix("0000_0"+hours)
+    setPostFix("0600_0"+hours)
   }, [forecastTime]);
 
   return (
