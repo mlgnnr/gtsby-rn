@@ -25,14 +25,14 @@ function Route() {
             marginBottom: '0.5rem'
         }}>
         <img 
-            src={RoutePNG}
+            src={Elevation}
             style={{
-                maxWidth: '90%',
+                maxWidth: '100%',
                 margin: '0 auto',
                 zIndex: 100
             }}></img>
         </div>    
-      </div>
+      </div>        
       <div style={{
           display: 'flex'
       }}>
@@ -43,14 +43,14 @@ function Route() {
             marginBottom: '0.5rem'
         }}>
         <img 
-            src={Elevation}
+            src={RoutePNG}
             style={{
-                maxWidth: '90%',
+                maxWidth: '100%',
                 margin: '0 auto',
                 zIndex: 100
             }}></img>
         </div>    
-      </div>      
+      </div>    
     </main>
   );
 }

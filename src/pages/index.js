@@ -150,7 +150,7 @@ function Index() {
             zIndex: 100
         }}></img>             
         <Laxlink 
-          title={"Tímataka.net"}
+          title={"Timataka.net"}
           internal={false}
           url={"https://timataka.net/hengillultra2021/urslit/?race=1&cat=f"}>
             <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#000000">
