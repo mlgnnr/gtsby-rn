@@ -68,7 +68,7 @@ function Vedur() {
   }
 
   useEffect(() => {
-    const date = new Date('2021-06-04T00:00:00')
+    const date = new Date('2021-06-04T12:00:00')
     date.setHours(date.getHours() + forecastTime)
     var s = date.getSeconds();
     var m = date.getMinutes();
