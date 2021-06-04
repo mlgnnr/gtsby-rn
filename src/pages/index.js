@@ -133,13 +133,19 @@ function Index() {
     }
     getDate();
   }, []);
+
+  const start = new Date("2021-06-04T22:00:00").getTime()
+  const now = new Date().getTime()
+
   return (
     <main>
       <Helmet>
         <title>LAX</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
+      { (start > now) &&
         <Countdown />
+      }
         <img 
         src={Background}
         style={{
