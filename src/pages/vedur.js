@@ -37,7 +37,7 @@ function Slider(){
 
 function Vedur() {
   const [forecastTime, setForecastTime] = useState(2);
-   const [postFix, setPostFix] = useState("0000_001");
+   const [postFix, setPostFix] = useState("1200_001");
   const [clock, setClock] = useState({})
   const baseURL = "v"
 //   rain/temp/wind
@@ -86,7 +86,7 @@ function Vedur() {
     } else {
         hours = forecastTime
     }
-    setPostFix("0000_0"+hours)
+    setPostFix("1200_0"+hours)
   }, [forecastTime]);
 
   return (
