@@ -99,16 +99,16 @@ const Countdown = () => {
             display: 'flex',
             justifyContent: 'space-evenly'
         }}>
-        <div className='time-section'>
-          <div className='time'>{state.hours || '00'}</div>
+        <div className='time-section'>16:50:17
+          <div className='time'>16</div>
           <small className="time-text">klst</small>
         </div>
         <div className='time-section'>
-          <div className='time'>{state.minutes || '00'}</div>
+          <div className='time'>50</div>
           <small className="time-text">mín</small>
         </div>
         <div className='time-section'>
-          <div className='time'>{state.seconds || '00'}</div>
+          <div className='time'>17 🎉</div>
           <small className="time-text">sek</small>
         </div>
       </div>
