@@ -13,7 +13,7 @@ const Countdown = () => {
   const [countdownDate, setCountdownDate] = useState(new Date('2021-06-04T22:00:00').getTime());
   const currentTime = new Date().getTime();
 
-  const distanceToDate = countdownDate - currentTime;
+  const distanceToDate = currentTime - countdownDate;
 
   let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
   let hours = Math.floor(
@@ -59,7 +59,7 @@ const Countdown = () => {
     if (countdownDate) {
       const currentTime = new Date().getTime();
 
-      const distanceToDate = countdownDate - currentTime;
+      const distanceToDate = currentTime - countdownDate;
 
       let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
       let hours = Math.floor(
@@ -100,12 +100,6 @@ const Countdown = () => {
             justifyContent: 'space-evenly'
         }}>
         <div className='time-section'>
-          <div className='time'>{state.days || '0'}</div>
-          <small className="time-text">
-              {(state.days == 1) ? "dagur" : "dagar" }
-              </small>
-        </div>
-        <div className='time-section'>
           <div className='time'>{state.hours || '00'}</div>
           <small className="time-text">klst</small>
         </div>
@@ -143,9 +137,7 @@ function Index() {
         <title>LAX</title>
         <meta property="og:image" content={Lax} />
       </Helmet>
-      { (start > now) &&
-        <Countdown />
-      }
+      <Countdown />
         <img 
         src={Background}
         style={{
